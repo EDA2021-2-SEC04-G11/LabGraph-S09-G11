@@ -44,7 +44,6 @@ de creacion y consulta sobre las estructuras de datos.
 
 def newAnalyzer():
     """ Inicializa el analizador
-
    stops: Tabla de hash para guardar los vertices del grafo
    connections: Grafo para representar las rutas entre estaciones
    components: Almacena la informacion de los componentes conectados
@@ -78,12 +77,9 @@ def addStopConnection(analyzer, lastservice, service):
     """
     Adiciona las estaciones al grafo como vertices y arcos entre las
     estaciones adyacentes.
-
     Los vertices tienen por nombre el identificador de la estacion
     seguido de la ruta que sirve.  Por ejemplo:
-
     75009-10
-
     Si la estacion sirve otra ruta, se tiene: 75009-101
     """
     try:
